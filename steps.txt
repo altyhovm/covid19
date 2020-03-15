@@ -1,1 +1,5 @@
 1. copied externalJsExample folder, renamed as new folder (covid19)
+2. opened example.html from new folder, and attempted search. (the search failed)
+3. Began edits to make example.html work. (covid19/externalJsExample)
+3a. Used Sublime Text (editor) to begin editing "./scripts/AppleSearch4.js" within externalJsExample.
+3b.

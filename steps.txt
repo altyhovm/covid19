@@ -84,6 +84,35 @@ replace https://aaronlilly.github.io with your io from github.
                                {$(document).ready(function () {  
                                  $('#ArrayD').append(data.results[0].fruit);
                                  console.log(data);          })                        });                  });
+	13. now that this works, ill save/commit/push
+	
+	14. next we will work with the data we actually want to work with. in this case i wanted to work with an api for the corona virus (why not?)
+
+	15. let's get the use a web browser to look at the data again.
+		15a. in this case was https://corona.lmao.ninja/countries (no i didnt build the site)
+		15b. because i havent studied the structure of the data, my code will be this currenlty with some things commented out ( my append wont work till i fix the structure so i'm just writing to console for now).
+
+  $(document).ready(function ()  
+            {
+                    $.ajax
+                        ({
+                    method: "GET",
+                    url: "https://corona.lmao.ninja/countries"
+                         }).done(function(data) 
+
+                               {$(document).ready(function () {  
+                                 //$('#ArrayD').append(data.results[0].fruit);
+                                 console.log(data);
+
+          })
+
+                        });
+                           });
+	16. after looking at the data structure, i will try data{0}.country in my console.log
+
+
+
+	
 
 	 
 

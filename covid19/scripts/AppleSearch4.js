@@ -29,22 +29,42 @@ for (var i = 0; i < result.length; i++) {
                               });
             });
 
-
-
-  $(document).ready(function ()  
+ $(document).ready(function ()  
             {
-                    $.ajax
-                        ({
-                    method: "GET",
-                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
-                         }).done(function(data) 
-
-                               {$(document).ready(function () {  
+                     {$(document).ready(function () {  
                                  $('#ArrayD').append("hi")
+                      })
+            };
+ });
 
-          })
-});
+
+//  $(document).ready(function ()  
+//             {
+//                      {$(document).ready(function () {  
+//                                  $('#ArrayD').append("hi")
+
+//           })
+// };
+//                          });
+
+
+//
+//   $(document).ready(function ()  
+//             {
+//                     $.ajax
+//                         ({
+//                     method: "GET",
+//                     url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
+//                          }).done(function(data) 
+
+//                                {$(document).ready(function () {  
+//                                  $('#ArrayD').append("hi")
+
+//           })
+// };
                          });
+//
+
 
 // for (var i = 0; i < results.length; i++) {
 //             $('#ArrayD').append(results[i].fruitname + " " + results[i].size + "  " + results[i].color + "<br>")

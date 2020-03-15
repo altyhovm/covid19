@@ -1,0 +1,1 @@
+1. copied externalJsExample folder, renamed as new folder (covid19)

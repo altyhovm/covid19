@@ -44,6 +44,7 @@ for (var i = 0; i < result.length; i++) {
 
           })
 });
+                         });
 
 // for (var i = 0; i < results.length; i++) {
 //             $('#ArrayD').append(results[i].fruitname + " " + results[i].size + "  " + results[i].color + "<br>")

@@ -39,6 +39,8 @@ replace https://aaronlilly.github.io with your io from github.
 
 9. for this document the copiedfolder will now be refered to as ./cf/
 
+10. now we get to decide what we want to do, first i want info to load when the page comes up this info will be replaced when i search something specific. 
+
 
 
  url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"

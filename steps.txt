@@ -2,4 +2,7 @@
 2. opened example.html from new folder, and attempted search. (the search failed)
 3. Began edits to make example.html work. (covid19/externalJsExample)
 3a. Used Sublime Text (editor) to begin editing "./scripts/AppleSearch4.js" within externalJsExample.
-3b.
+3b.Reviewed $.ajax portion of code within AppleSearch4.js
+3b1. current code reflected url as  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json"
+3b2. need to revise code, first need to make current folder public in github.
+3b2a. saved SublimeText and commited using GitHubDesktop, 

@@ -1,6 +1,7 @@
 newfolder name is determined by user.
+replace https://aaronlilly.github.io with your io from github.
 
-1.within (newfolder) copied externalJsExample (as this will be an external file example (actually json)).
+1.within (examplefolder) copied externalJsExample and pasted into (newfolder) (as this will be an external file example (actually json)).
 2. opened (newfolder/externalJsExample) folder opened example.html 
 	2a. attempted search (which failed)(this is what it should do at this point.
 	2b. using GithubDesktop, commited changes, then pushed.
@@ -17,6 +18,17 @@ newfolder name is determined by user.
 4. Within GithubDeskTop commited changes and pushed to origin.
 5. Opened webbrowser and navigated to 
 "https://aaronlilly.github.io/<newfolder>/externalJsExample/apple4.json
+	5a. if this is successful, we are on the right path!
+	5b. navigated to https://aaronlilly.github.io/<newfolder>/externalJsExample/example.html
+	5c. tested search, it was successful!!! (if not you did something wrong).
+6. now that we have a working example, were going to do it all again.
+
+7. within (newfolder) copied externalJsExample and pasted within same (newfolder) 
+	7a. changed name of this copied folder
+	7b. the reason i do this is if the example works, i want to get an alternate working next, so that if i mess up I can just go back to the example, I then can take the alternate, and turn it into my final project. this copied folder will be listed here as copiedfolder
+	7c. within copiedfolder opened scripts/AppleSearch4.js (opened with SublimeText)
+
+
 
 "https://aaronlilly.github.io/Coronavirus/externalJsExample/apple4.json
 https://aaronlilly.github.io/Coronavirus/externalJsExample/example.html

@@ -3,7 +3,7 @@
                     $.ajax
                         ({
                     method: "GET",
-                    url: "https://aaronlilly.github.io/Coronavirus/externalJsExample/apple4.json"
+                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
                          }).done(function(data) 
 
                                {$(document).ready(function () {  

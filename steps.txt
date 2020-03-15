@@ -10,3 +10,11 @@
 	then within GitHub Pages under Source, changed None to "master branch"
 	scrolled back down to GitHub Pages and copied the url followed by "Your site is ready to be published at"
 	in this case was listed as "https://aaronlilly.github.io/Coronavirus/"
+3b3. return to SublimeText AppleSearch4.js (covid19/externalJsExample/scripts/) 
+	change url from  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json" to
+	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/scripts/apple4.js"
+3b4. saved AppleSearch4.js in SublimeText
+	commited changes and pushed within GitHubDesktop
+	waited 2minutes ( so changes could be made online)
+	verified changes were availble by navigating in webpage to
+	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/scripts/apple4.js"

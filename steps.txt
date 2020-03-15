@@ -1,2 +1,11 @@
 1.within (newfolder) copied externalJsExample (as this will be an external file example (actually json)).
-2. opened (newfolder/externalJsExample) folder opened example.html.
+2. opened (newfolder/externalJsExample) folder opened example.html 
+	2a. attempted search (which failed)(this is what it should do at this point.
+	2b. using GithubDesktop, commited changes, then pushed.
+	2c. with github pages in use via github (if not sure how to make public go to settings in github)
+		opened a browser window and navigated to. 
+		https://aaronlilly.github.io/<newfolder>/externalJsExample/example.html
+
+
+
+https://aaronlilly.github.io/Coronavirus/externalJsExample/example.html

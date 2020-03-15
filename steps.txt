@@ -45,7 +45,47 @@ replace https://aaronlilly.github.io with your io from github.
 		 $(document).ready(function ()              {
                      {$(document).ready(function () {  
                                  $('#ArrayD').append("hi") })             };    });
-		
+		10a2. i save and test which works as i see the "hi" appended to the page. 
+
+11. next we will look at the structure of the data that we want to actually append on the page. 
+	11a. navigate to https://aaronlilly.github.io/Coronavirus/covid19/apple4.json or whatever you have in your url in the $.ajax (call)
+	11b. im going to add "console.log(data)" to my code for the onload function, it should look like this
+	 $(document).ready(function ()             {
+		$(document).ready(function () {  
+                                 $('#ArrayD').append("hi");
+                                 console.log(data)      ;                 })            }; });
+	11c. then i will bring up the console and see what it writes.
+		11c1. this shouldnt work because console does not know what "data" is. we need to bring in the $.ajax, or move the function into the other,  DRY coding would say to combine the functions, but i know the first function works, i'd rather have a second, even repeating function. proper coding be wrecked.
+		11c2. this code is what i will have 
+		  $(document).ready(function ()  
+            		{
+                    $.ajax
+                        ({
+                    method: "GET",
+                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
+                         }).done(function(data) 
+                               {$(document).ready(function () {  
+				console.log(data);
+                                 $('#ArrayD').append("hi");
+                                            })                        });                            });
+
+	12. now my console.log works, it should show an array (to view go to Inspect or developer tools then console).
+		12a. now we want to append specific objects from the data instead of having the array written to the console, 
+		12b. in this case my data was results[0].fruit to retrieve the word "apple"
+		12c. so i will change my append to data.results[0].fruit.
+		12d. heres my code again.
+		  $(document).ready(function ()  
+          	  {                $.ajax
+                        ({
+                    method: "GET",
+                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
+                         }).done(function(data) 
+
+                               {$(document).ready(function () {  
+                                 $('#ArrayD').append(data.results[0].fruit);
+                                 console.log(data);          })                        });                  });
+
+	 
 
 
 

@@ -1,3 +1,5 @@
+ 
+//search function.
   $(document).ready(function ()  
             {
                     $.ajax
@@ -28,14 +30,28 @@ for (var i = 0; i < result.length; i++) {
                                
                               });
             });
+//end search function
 
- $(document).ready(function ()  
+//onload function
+  $(document).ready(function ()  
             {
-                     {$(document).ready(function () {  
-                                 $('#ArrayD').append("hi")
-                      })
-            };
- });
+                    $.ajax
+                        ({
+                    method: "GET",
+                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
+                         }).done(function(data) 
+
+                               {$(document).ready(function () {  
+                                 $('#ArrayD').append(data.results[0].fruit);
+                                 console.log(data);
+
+          })
+
+                        });
+                           });
+
+//end onload function
+
 
 
 //  $(document).ready(function ()  

@@ -27,8 +27,21 @@ replace https://aaronlilly.github.io with your io from github.
 	7a. changed name of this copied folder
 	7b. the reason i do this is if the example works, i want to get an alternate working next, so that if i mess up I can just go back to the example, I then can take the alternate, and turn it into my final project. this copied folder will be listed here as copiedfolder
 	7c. within copiedfolder opened scripts/AppleSearch4.js (opened with SublimeText)
+	changed  url: "https://aaronlilly.github.io/<newfolder>/externalJsExample/apple4.json"
+	to 
+	 url: "https://aaronlilly.github.io/<newfolder>/<copiedfolder>/apple4.json"
+	(in this case it was https://aaronlilly.github.io/Coronavirus/covid19/apple4.json)
+	7d. Saved in Sublime, commited and pushed in GithubDesktop
+	7e. Opened https://aaronlilly.github.io/<newfolder>/<copiedfolder>/apple4.json in web browser. success!
+	7f. Opened https://aaronlilly.github.io/<newfolder>/<copiedfolder>/example.html	in web browser, and tried search function. this was successful!!! (in this case https://aaronlilly.github.io/Coronavirus/covid19/example.html)
+
+8. with that working let's play!!! From now on we will only be working in the copiedfolder if you are paranoid like me, make another copy of it or just rely on git/github.
+
+9. for this document the copiedfolder will now be refered to as ./cf/
 
 
+
+ url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
 
 "https://aaronlilly.github.io/Coronavirus/externalJsExample/apple4.json
 https://aaronlilly.github.io/Coronavirus/externalJsExample/example.html

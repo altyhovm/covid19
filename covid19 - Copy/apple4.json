@@ -1,0 +1,29 @@
+{
+   "results": 
+  [
+    {
+    "fruit": "apple",
+    "fruitname" : "Apple",
+    "size": "Large",
+    "color": "Red"
+  },
+     {
+    "fruit": "banana",
+    "fruitname" : "Banana",
+    "size": "Large",
+    "color": "Yellow"
+  },
+  {
+    "fruit": "orange",
+    "fruitname" : "Orange",
+    "size": "Large",
+    "color": "Orange"
+  },
+    {
+    "fruit": "strawberry",
+    "fruitname" : "Strawberry",
+    "size": "Small",
+    "color": "Red"
+    } 
+  ]
+  }

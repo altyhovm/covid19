@@ -14,6 +14,7 @@
 	change url from  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json" to
 	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/scripts/apple4.js"
 3b4. saved AppleSearch4.js in SublimeText
+	realized my folders were a little "wrong" copied externalJsExample into covid19 folder. (maybe a step is wrong but whatever)
 	commited changes and pushed within GitHubDesktop
 	waited 2minutes ( so changes could be made online)
 	verified changes were availble by navigating in webpage to

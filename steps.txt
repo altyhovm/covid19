@@ -108,8 +108,12 @@ replace https://aaronlilly.github.io with your io from github.
 
                         });
                            });
-	16. after looking at the data structure, i will try data{0}.country in my console.log
+	16. after looking at the data structure, i will try data[0].country in my console.log
+		16a. this should bring write "china" to the console. it is successful.
 
+	17. its now time again to think of the overall site and what do i want to do?
+		17a. How about a site where I can search for the name of the country and it shows the number of cases, todays cases, etc maybe in a table?  As I think about this, I realize it may have been easier to have a drop down menu, or list all the names of the countries and then click on the country name to display the info, but we're half way here so why not just do it this way? and at this point, im tired of commenting so ill just do what i want to , have fun .
+	
 
 
 	

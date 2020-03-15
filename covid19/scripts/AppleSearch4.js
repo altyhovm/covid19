@@ -42,7 +42,7 @@ for (var i = 0; i < result.length; i++) {
                                {$(document).ready(function () {  
                                  $('#ArrayD').append("hi")
 
-          }
+          })
 });
 
 // for (var i = 0; i < results.length; i++) {

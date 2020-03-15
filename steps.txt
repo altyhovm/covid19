@@ -1,21 +1,2 @@
-1. copied externalJsExample folder, renamed as new folder (covid19)
-2. opened example.html from new folder, and attempted search. (the search failed)
-3. Began edits to make example.html work. (covid19/externalJsExample)
-3a. Used Sublime Text (editor) to begin editing "./scripts/AppleSearch4.js" within externalJsExample.
-3b.Reviewed $.ajax portion of code within AppleSearch4.js
-3b1. current code reflected url as  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json"
-3b2. need to revise code, first need to make current folder public in github.
-3b2a. saved SublimeText and commited using GitHubDesktop, within GitHubDesktop clicked on "view on github",
-	clicked on settings in GitHub, made repo public (within Danger Zone section), 
-	then within GitHub Pages under Source, changed None to "master branch"
-	scrolled back down to GitHub Pages and copied the url followed by "Your site is ready to be published at"
-	in this case was listed as "https://aaronlilly.github.io/Coronavirus/"
-3b3. return to SublimeText AppleSearch4.js (covid19/externalJsExample/scripts/) 
-	change url from  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json" to
-	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/apple4.json"
-3b4. saved AppleSearch4.js in SublimeText
-	realized my folders were a little "wrong" copied externalJsExample into covid19 folder. (maybe a step is wrong but whatever)
-	commited changes and pushed within GitHubDesktop
-	waited 2minutes ( so changes could be made online)
-	verified changes were availble by navigating in webpage to
-	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/apple4.json"
+1.within (newfolder) copied externalJsExample (as this will be an external file example (actually json)).
+2. opened (newfolder/externalJsExample) folder opened example.html.

@@ -12,10 +12,10 @@
 	in this case was listed as "https://aaronlilly.github.io/Coronavirus/"
 3b3. return to SublimeText AppleSearch4.js (covid19/externalJsExample/scripts/) 
 	change url from  url: "https://aaronlilly.github.io/ApiExample/Apple4/apple4.json" to
-	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/scripts/apple4.js"
+	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/apple4.json"
 3b4. saved AppleSearch4.js in SublimeText
 	realized my folders were a little "wrong" copied externalJsExample into covid19 folder. (maybe a step is wrong but whatever)
 	commited changes and pushed within GitHubDesktop
 	waited 2minutes ( so changes could be made online)
 	verified changes were availble by navigating in webpage to
-	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/scripts/apple4.js"
+	"https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/apple4.json"

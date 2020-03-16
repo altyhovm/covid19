@@ -1,86 +1,154 @@
  
-// //search function.
+// // //search function.
+//   $(document).ready(function ()  
+//             {
+//                     $.ajax
+//                         ({
+//                     method: "GET",
+//                     url: "https://corona.lmao.ninja/countries"
+//                          }).done(function(data) 
+
+//                                {$(document).ready(function () {  
+//         $('#dynam-now').click(function () {
+//          let searchString = $('#dynamId').val();
+
+// let result = _.filter(data.results, function(object) {
+
+// return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
+
+// });
+//         //console.log(result[0].fruit)
+//         $('#ArrayD').html("");
+ 
+// for (var i = 0; i < result.length; i++) {
+//             $('#ArrayD').append(result[i].country + "<br>")
+//         };
+//     });
+// });   
+//                                 //console.log(data)
+                       
+                               
+//                               });
+//             });
+// //end search function
+
+
+
+// //onload function
+//   $(document).ready(function ()  
+//             {
+//                     $.ajax
+//                         ({
+//                     method: "GET",
+//                     url: "https://corona.lmao.ninja/countries"
+//                          }).done(function(data) 
+
+//                                {$(document).ready(function () {  
+
+//                                 for (var i = 0; i < data.length; i++) {
+//                                  $('#ArrayD').append(data[i].country + " ");
+
+//                                } 
+//                                  //console.log(data[0].country);
+
+
+//           })
+
+//                         });
+//                            });
+
+// //end onload function
+
+
+
+
+//onload function
   $(document).ready(function ()  
             {
                     $.ajax
                         ({
                     method: "GET",
-                    url: "https://aaronlilly.github.io/Coronavirus/covid19/apple4.json"
+                    url: "https://corona.lmao.ninja/countries"
                          }).done(function(data) 
 
                                {$(document).ready(function () {  
-        $('#dynam-now').click(function () {
+
+                                for (var i = 0; i < data.length; i++) {
+                                 $('#ArrayD').append(data[i].country + " ");
+
+                               } 
+                                 //console.log(data[0].country);
+
+
+          })
+
+                        });
+                           });
+
+//end onload function
+
+//internal search
+
+// $(document).ready(function () {  
+//         $('#dynam-now').click(function ()
+//          {
+
+//          let searchString = $('#dynamId').val();
+
+// let result = _.filter(clientChoices, function(object) {
+
+// return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
+
+// });
+        
+//         $('#ArrayD').html("");
+ 
+// for (var i = 0; i < result.length; i++) {
+          
+//             $('#ArrayD').append(result[i].country)
+//         };
+//     });
+// });   
+
+//external dataserch
+   
+$(document).ready(function ()
+ {  
+    $.ajax
+         ({
+                    method: "GET",
+                    url: "https://corona.lmao.ninja/countries"
+                         }).done(function(data) {
+
+        $('#dynam-now').click(function ()
+         {
+          
          let searchString = $('#dynamId').val();
 
-let result = _.filter(data.results, function(object) {
+let result = _.filter(data, function(object) {
 
-return object.fruitname.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
+return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
 
 });
-        //console.log(result[0].fruit)
+        
         $('#ArrayD').html("");
  
 for (var i = 0; i < result.length; i++) {
-            $('#ArrayD').append(result[i].fruitname + " " + result[i].size + "  " + result[i].color + "<br>")
+          
+            $('#ArrayD').append(result[i].country +"<BR>")
+
         };
+        })
     });
-});   
-                                //console.log(data)
-                       
-                               
-                              });
-            });
-//end search function
-
-//onload function
-  $(document).ready(function ()  
-            {
-                    $.ajax
-                        ({
-                    method: "GET",
-                    url: "https://corona.lmao.ninja/countries"
-                         }).done(function(data) 
-
-                               {$(document).ready(function () {  
-
-                                for (var i = 0; i < data.length; i++) {
-                                 $('#ArrayD').append(data[i].country + " ");
-
-                               } 
-                                 //console.log(data[0].country);
-
-
-          })
-
-                        });
-                           });
-
-//end onload function
+});  
 
 
 
 
-//onload function
-  $(document).ready(function ()  
-            {
-                    $.ajax
-                        ({
-                    method: "GET",
-                    url: "https://corona.lmao.ninja/countries"
-                         }).done(function(data) 
+//    //init data
+//  var clientChoices31520 =
+//  [{"country":"China","cases":80849,"todayCases":25,"deaths":3199,"todayDeaths":10,"recovered":66931,"critical":3226},{"country":"Italy","cases":24747,"todayCases":3590,"deaths":1809,"todayDeaths":368,"recovered":2335,"critical":1672},{"country":"Iran","cases":13938,"todayCases":1209,"deaths":724,"todayDeaths":113,"recovered":4590,"critical":0},{"country":"S. Korea","cases":8162,"todayCases":76,"deaths":75,"todayDeaths":3,"recovered":834,"critical":59},{"country":"Spain","cases":7798,"todayCases":1407,"deaths":292,"todayDeaths":96,"recovered":517,"critical":272},{"country":"Germany","cases":5813,"todayCases":1214,"deaths":11,"todayDeaths":2,"recovered":46,"critical":2},{"country":"France","cases":4499,"todayCases":30,"deaths":91,"todayDeaths":0,"recovered":12,"critical":300},{"country":"USA","cases":3329,"todayCases":386,"deaths":63,"todayDeaths":6,"recovered":59,"critical":10},{"country":"Switzerland","cases":2217,"todayCases":842,"deaths":14,"todayDeaths":1,"recovered":4,"critical":0},{"country":"UK","cases":1372,"todayCases":232,"deaths":35,"todayDeaths":14,"recovered":20,"critical":20},{"country":"Norway","cases":1231,"todayCases":122,"deaths":3,"todayDeaths":0,"recovered":1,"critical":27},{"country":"Netherlands","cases":1135,"todayCases":176,"deaths":20,"todayDeaths":8,"recovered":2,"critical":45},{"country":"Sweden","cases":1032,"todayCases":71,"deaths":3,"todayDeaths":1,"recovered":1,"critical":2},{"country":"Belgium","cases":886,"todayCases":197,"deaths":4,"todayDeaths":0,"recovered":1,"critical":33},{"country":"Denmark","cases":864,"todayCases":28,"deaths":2,"todayDeaths":1,"recovered":1,"critical":2},{"country":"Austria","cases":860,"todayCases":205,"deaths":1,"todayDeaths":0,"recovered":6,"critical":1},{"country":"Japan","cases":839,"todayCases":35,"deaths":24,"todayDeaths":2,"recovered":144,"critical":36},{"country":"Diamond Princess","cases":696,"todayCases":0,"deaths":7,"todayDeaths":0,"recovered":456,"critical":15},{"country":"Malaysia","cases":428,"todayCases":190,"deaths":0,"todayDeaths":0,"recovered":42,"critical":9},{"country":"Qatar","cases":401,"todayCases":64,"deaths":0,"todayDeaths":0,"recovered":4,"critical":0},{"country":"Greece","cases":331,"todayCases":103,"deaths":4,"todayDeaths":1,"recovered":8,"critical":5},{"country":"Canada","cases":317,"todayCases":65,"deaths":1,"todayDeaths":0,"recovered":11,"critical":1},{"country":"Australia","cases":300,"todayCases":52,"deaths":5,"todayDeaths":2,"recovered":27,"critical":1},{"country":"Czechia","cases":253,"todayCases":64,"deaths":0,"todayDeaths":0,"recovered":0,"critical":2},{"country":"Portugal","cases":245,"todayCases":76,"deaths":0,"todayDeaths":0,"recovered":2,"critical":9},{"country":"Finland","cases":244,"todayCases":19,"deaths":0,"todayDeaths":0,"recovered":10,"critical":0},{"country":"Singapore","cases":226,"todayCases":14,"deaths":0,"todayDeaths":0,"recovered":105,"critical":11},{"country":"Slovenia","cases":219,"todayCases":38,"deaths":1,"todayDeaths":0,"recovered":0,"critical":3},{"country":"Bahrain","cases":214,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":60,"critical":2},{"country":"Israel","cases":213,"todayCases":20,"deaths":0,"todayDeaths":0,"recovered":4,"critical":2},{"country":"Estonia","cases":171,"todayCases":56,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Iceland","cases":171,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Ireland","cases":169,"todayCases":40,"deaths":2,"todayDeaths":0,"recovered":1,"critical":6},{"country":"Hong Kong","cases":149,"todayCases":7,"deaths":4,"todayDeaths":0,"recovered":81,"critical":4},{"country":"Philippines","cases":140,"todayCases":29,"deaths":11,"todayDeaths":3,"recovered":2,"critical":1},{"country":"Romania","cases":139,"todayCases":16,"deaths":0,"todayDeaths":0,"recovered":9,"critical":1},{"country":"Poland","cases":123,"todayCases":19,"deaths":3,"todayDeaths":0,"recovered":13,"critical":3},{"country":"Brazil","cases":121,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":2},{"country":"Indonesia","cases":117,"todayCases":21,"deaths":5,"todayDeaths":0,"recovered":8,"critical":0},{"country":"Iraq","cases":116,"todayCases":6,"deaths":10,"todayDeaths":0,"recovered":26,"critical":0},{"country":"Thailand","cases":114,"todayCases":32,"deaths":1,"todayDeaths":0,"recovered":35,"critical":1},{"country":"Kuwait","cases":112,"todayCases":8,"deaths":0,"todayDeaths":0,"recovered":9,"critical":4},{"country":"India","cases":111,"todayCases":11,"deaths":2,"todayDeaths":0,"recovered":13,"critical":0},{"country":"Egypt","cases":110,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":27,"critical":0},{"country":"Saudi Arabia","cases":103,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"San Marino","cases":101,"todayCases":0,"deaths":5,"todayDeaths":0,"recovered":4,"critical":3},{"country":"Lebanon","cases":99,"todayCases":6,"deaths":3,"todayDeaths":0,"recovered":1,"critical":3},{"country":"UAE","cases":98,"todayCases":13,"deaths":0,"todayDeaths":0,"recovered":20,"critical":2},{"country":"Chile","cases":75,"todayCases":14,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Russia","cases":63,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":8,"critical":0},{"country":"South Africa","cases":61,"todayCases":23,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Luxembourg","cases":59,"todayCases":8,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Taiwan","cases":59,"todayCases":6,"deaths":1,"todayDeaths":0,"recovered":20,"critical":0},{"country":"Vietnam","cases":56,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":16,"critical":0},{"country":"Slovakia","cases":54,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Pakistan","cases":53,"todayCases":20,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Bulgaria","cases":51,"todayCases":10,"deaths":2,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Brunei","cases":50,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Croatia","cases":49,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Algeria","cases":48,"todayCases":9,"deaths":4,"todayDeaths":1,"recovered":10,"critical":0},{"country":"Serbia","cases":48,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":1,"critical":1},{"country":"Argentina","cases":45,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Panama","cases":43,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Peru","cases":43,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Albania","cases":42,"todayCases":4,"deaths":1,"todayDeaths":0,"recovered":0,"critical":2},{"country":"Mexico","cases":41,"todayCases":15,"deaths":0,"todayDeaths":0,"recovered":4,"critical":1},{"country":"Palestine","cases":38,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Colombia","cases":34,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Georgia","cases":33,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":1,"critical":1},{"country":"Cyprus","cases":33,"todayCases":7,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Hungary","cases":32,"todayCases":2,"deaths":1,"todayDeaths":1,"recovered":1,"critical":0},{"country":"Latvia","cases":30,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Ecuador","cases":28,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Morocco","cases":28,"todayCases":10,"deaths":1,"todayDeaths":0,"recovered":1,"critical":1},{"country":"Belarus","cases":27,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":3,"critical":0},{"country":"Costa Rica","cases":27,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Armenia","cases":26,"todayCases":6,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Senegal","cases":24,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Bosnia and Herzegovina","cases":24,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Azerbaijan","cases":23,"todayCases":4,"deaths":1,"todayDeaths":0,"recovered":6,"critical":0},{"country":"Moldova","cases":23,"todayCases":11,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Oman","cases":22,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":9,"critical":0},{"country":"Malta","cases":21,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Tunisia","cases":20,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":2},{"country":"North Macedonia","cases":19,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Sri Lanka","cases":18,"todayCases":8,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Afghanistan","cases":16,"todayCases":5,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Maldives","cases":13,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cambodia","cases":12,"todayCases":5,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Lithuania","cases":12,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Macao","cases":11,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":10,"critical":0},{"country":"Dominican Republic","cases":11,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Faeroe Islands","cases":11,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Jordan","cases":10,"todayCases":9,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Bolivia","cases":10,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Jamaica","cases":10,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Martinique","cases":10,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Venezuela","cases":10,"todayCases":8,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Kazakhstan","cases":9,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"New Zealand","cases":8,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"French Guiana","cases":7,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Liechtenstein","cases":7,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Paraguay","cases":7,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Réunion","cases":7,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ghana","cases":6,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Turkey","cases":6,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Uruguay","cases":6,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Andorra","cases":5,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bangladesh","cases":5,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Guyana","cases":4,"todayCases":3,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ivory Coast","cases":4,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cuba","cases":4,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ethiopia","cases":4,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Puerto Rico","cases":4,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ukraine","cases":3,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Burkina Faso","cases":3,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Channel Islands","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"French Polynesia","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guadeloupe","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guam","cases":3,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Honduras","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Kenya","cases":3,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Seychelles","cases":3,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Monaco","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Nigeria","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Aruba","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cameroon","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Curaçao","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"DRC","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Namibia","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Saint Lucia","cases":2,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Saint Martin","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Trinidad and Tobago","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Sudan","cases":1,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Nepal","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Antigua and Barbuda","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bahamas","cases":1,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bhutan","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cayman Islands","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"CAR","cases":1,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Congo","cases":1,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Equatorial Guinea","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Gabon","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Gibraltar","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Guatemala","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guinea","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Vatican City","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mauritania","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mayotte","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mongolia","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Rwanda","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"St. Barth","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"St. Vincent Grenadines","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Suriname","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Eswatini","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Togo","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"U.S. Virgin Islands","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Uzbekistan","cases":1,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0}];
 
-                               {$(document).ready(function () {  
-
-                                for (var i = 0; i < data.length; i++) {
-                                 $('#ArrayD').append(data[i].country + " ");
-
-                               } 
-                                 //console.log(data[0].country);
-
-
-          })
-
-                        });
-                           });
-
-//end onload function
+// //updated
+// var clientChoices =
+//  [{"country":"China","cases":80880,"todayCases":36,"deaths":3213,"todayDeaths":14,"recovered":67771,"critical":3226},{"country":"Italy","cases":24747,"todayCases":0,"deaths":1809,"todayDeaths":0,"recovered":2335,"critical":1672},{"country":"Iran","cases":14991,"todayCases":1053,"deaths":853,"todayDeaths":129,"recovered":4590,"critical":0},{"country":"Spain","cases":8794,"todayCases":806,"deaths":297,"todayDeaths":3,"recovered":517,"critical":272},{"country":"S. Korea","cases":8236,"todayCases":74,"deaths":75,"todayDeaths":0,"recovered":1137,"critical":59},{"country":"Germany","cases":6248,"todayCases":435,"deaths":13,"todayDeaths":0,"recovered":46,"critical":2},{"country":"France","cases":5423,"todayCases":0,"deaths":127,"todayDeaths":0,"recovered":12,"critical":400},{"country":"USA","cases":3802,"todayCases":122,"deaths":69,"todayDeaths":1,"recovered":73,"critical":10},{"country":"Switzerland","cases":2218,"todayCases":1,"deaths":15,"todayDeaths":1,"recovered":4,"critical":0},{"country":"UK","cases":1391,"todayCases":0,"deaths":35,"todayDeaths":0,"recovered":20,"critical":20},{"country":"Norway","cases":1285,"todayCases":29,"deaths":3,"todayDeaths":0,"recovered":1,"critical":27},{"country":"Netherlands","cases":1135,"todayCases":0,"deaths":20,"todayDeaths":0,"recovered":2,"critical":45},{"country":"Belgium","cases":1058,"todayCases":172,"deaths":5,"todayDeaths":1,"recovered":1,"critical":33},{"country":"Sweden","cases":1046,"todayCases":6,"deaths":6,"todayDeaths":3,"recovered":1,"critical":2},{"country":"Austria","cases":1018,"todayCases":158,"deaths":2,"todayDeaths":1,"recovered":8,"critical":1},{"country":"Denmark","cases":898,"todayCases":34,"deaths":4,"todayDeaths":2,"recovered":1,"critical":2},{"country":"Japan","cases":845,"todayCases":6,"deaths":27,"todayDeaths":3,"recovered":144,"critical":36},{"country":"Diamond Princess","cases":696,"todayCases":0,"deaths":7,"todayDeaths":0,"recovered":456,"critical":15},{"country":"Malaysia","cases":566,"todayCases":138,"deaths":0,"todayDeaths":0,"recovered":42,"critical":9},{"country":"Qatar","cases":401,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":4,"critical":0},{"country":"Australia","cases":375,"todayCases":75,"deaths":5,"todayDeaths":0,"recovered":27,"critical":1},{"country":"Canada","cases":341,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":11,"critical":1},{"country":"Greece","cases":331,"todayCases":0,"deaths":4,"todayDeaths":0,"recovered":8,"critical":5},{"country":"Czechia","cases":298,"todayCases":5,"deaths":0,"todayDeaths":0,"recovered":0,"critical":2},{"country":"Finland","cases":278,"todayCases":34,"deaths":0,"todayDeaths":0,"recovered":10,"critical":1},{"country":"Israel","cases":255,"todayCases":42,"deaths":0,"todayDeaths":0,"recovered":4,"critical":4},{"country":"Portugal","cases":245,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":3,"critical":9},{"country":"Singapore","cases":243,"todayCases":17,"deaths":0,"todayDeaths":0,"recovered":109,"critical":11},{"country":"Bahrain","cases":221,"todayCases":7,"deaths":1,"todayDeaths":1,"recovered":77,"critical":1},{"country":"Slovenia","cases":219,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":3},{"country":"Estonia","cases":205,"todayCases":34,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Brazil","cases":203,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":2,"critical":2},{"country":"Iceland","cases":180,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Ireland","cases":170,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":5,"critical":6},{"country":"Romania","cases":158,"todayCases":19,"deaths":0,"todayDeaths":0,"recovered":9,"critical":1},{"country":"Poland","cases":150,"todayCases":25,"deaths":3,"todayDeaths":0,"recovered":0,"critical":3},{"country":"Hong Kong","cases":149,"todayCases":0,"deaths":4,"todayDeaths":0,"recovered":81,"critical":4},{"country":"Thailand","cases":147,"todayCases":33,"deaths":1,"todayDeaths":0,"recovered":35,"critical":1},{"country":"Philippines","cases":140,"todayCases":0,"deaths":12,"todayDeaths":0,"recovered":5,"critical":1},{"country":"Indonesia","cases":134,"todayCases":17,"deaths":5,"todayDeaths":0,"recovered":8,"critical":0},{"country":"India","cases":129,"todayCases":15,"deaths":2,"todayDeaths":0,"recovered":13,"critical":0},{"country":"Egypt","cases":126,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":32,"critical":0},{"country":"Iraq","cases":124,"todayCases":0,"deaths":10,"todayDeaths":0,"recovered":26,"critical":0},{"country":"Kuwait","cases":123,"todayCases":11,"deaths":0,"todayDeaths":0,"recovered":9,"critical":4},{"country":"Saudi Arabia","cases":118,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":3,"critical":0},{"country":"San Marino","cases":109,"todayCases":0,"deaths":7,"todayDeaths":0,"recovered":4,"critical":11},{"country":"Lebanon","cases":109,"todayCases":0,"deaths":3,"todayDeaths":0,"recovered":1,"critical":3},{"country":"UAE","cases":98,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":23,"critical":2},{"country":"Pakistan","cases":94,"todayCases":41,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Luxembourg","cases":81,"todayCases":4,"deaths":1,"todayDeaths":0,"recovered":0,"critical":10},{"country":"Chile","cases":75,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Peru","cases":71,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Russia","cases":63,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":8,"critical":0},{"country":"South Africa","cases":62,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Slovakia","cases":61,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Taiwan","cases":59,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":20,"critical":0},{"country":"Vietnam","cases":57,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":16,"critical":0},{"country":"Argentina","cases":56,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":3,"critical":1},{"country":"Croatia","cases":56,"todayCases":7,"deaths":0,"todayDeaths":0,"recovered":3,"critical":0},{"country":"Panama","cases":55,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Serbia","cases":55,"todayCases":7,"deaths":0,"todayDeaths":0,"recovered":1,"critical":2},{"country":"Algeria","cases":54,"todayCases":0,"deaths":4,"todayDeaths":0,"recovered":10,"critical":0},{"country":"Brunei","cases":54,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mexico","cases":53,"todayCases":10,"deaths":0,"todayDeaths":0,"recovered":4,"critical":1},{"country":"Bulgaria","cases":52,"todayCases":1,"deaths":2,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Albania","cases":51,"todayCases":9,"deaths":1,"todayDeaths":0,"recovered":0,"critical":2},{"country":"Colombia","cases":45,"todayCases":11,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Hungary","cases":39,"todayCases":7,"deaths":1,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Palestine","cases":39,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ecuador","cases":37,"todayCases":0,"deaths":2,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Belarus","cases":36,"todayCases":9,"deaths":0,"todayDeaths":0,"recovered":3,"critical":0},{"country":"Costa Rica","cases":35,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":3},{"country":"Latvia","cases":34,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Georgia","cases":33,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":1},{"country":"Cyprus","cases":33,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Armenia","cases":30,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":1,"critical":2},{"country":"Malta","cases":30,"todayCases":9,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Morocco","cases":29,"todayCases":1,"deaths":1,"todayDeaths":0,"recovered":1,"critical":1},{"country":"Azerbaijan","cases":25,"todayCases":2,"deaths":1,"todayDeaths":0,"recovered":6,"critical":0},{"country":"Senegal","cases":24,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Bosnia and Herzegovina","cases":24,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Moldova","cases":23,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Oman","cases":22,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":9,"critical":0},{"country":"Sri Lanka","cases":22,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Afghanistan","cases":21,"todayCases":5,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Tunisia","cases":20,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":2},{"country":"North Macedonia","cases":19,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Faeroe Islands","cases":18,"todayCases":7,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Turkey","cases":18,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Lithuania","cases":17,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Venezuela","cases":17,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Jordan","cases":16,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Burkina Faso","cases":15,"todayCases":12,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Martinique","cases":15,"todayCases":5,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Maldives","cases":13,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cambodia","cases":12,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Macao","cases":11,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":10,"critical":0},{"country":"Dominican Republic","cases":11,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bolivia","cases":11,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Jamaica","cases":10,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":2,"critical":0},{"country":"Kazakhstan","cases":9,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Réunion","cases":9,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"New Zealand","cases":8,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bangladesh","cases":8,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":3,"critical":0},{"country":"Paraguay","cases":8,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":1},{"country":"Uruguay","cases":8,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guyana","cases":7,"todayCases":3,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"French Guiana","cases":7,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Liechtenstein","cases":7,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Monaco","cases":6,"todayCases":4,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ghana","cases":6,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guadeloupe","cases":6,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Honduras","cases":6,"todayCases":3,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Uzbekistan","cases":6,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ukraine","cases":5,"todayCases":2,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Andorra","cases":5,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ethiopia","cases":5,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Puerto Rico","cases":5,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Rwanda","cases":5,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cameroon","cases":4,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Ivory Coast","cases":4,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cuba","cases":4,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Trinidad and Tobago","cases":4,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Channel Islands","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"French Polynesia","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guam","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Kenya","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"St. Barth","cases":3,"todayCases":2,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Seychelles","cases":3,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Guatemala","cases":2,"todayCases":1,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Nigeria","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Aruba","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Curaçao","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"DRC","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Namibia","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Saint Lucia","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Saint Martin","cases":2,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Sudan","cases":1,"todayCases":0,"deaths":1,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Nepal","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Antigua and Barbuda","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bahamas","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Bhutan","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Cayman Islands","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"CAR","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Congo","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Equatorial Guinea","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Gabon","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Gibraltar","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":1,"critical":0},{"country":"Guinea","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Vatican City","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Liberia","cases":1,"todayCases":1,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mauritania","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mayotte","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Mongolia","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"St. Vincent Grenadines","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Suriname","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Eswatini","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"Togo","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0},{"country":"U.S. Virgin Islands","cases":1,"todayCases":0,"deaths":0,"todayDeaths":0,"recovered":0,"critical":0}]

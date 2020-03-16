@@ -37,9 +37,12 @@ return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
         $('#ArrayD').html("");
 for (var i = 0; i < result.length; i++) {
           
-            $('#ArrayD').append(result[i].country +"<BR>")
+            $('#ArrayD').append(result[i].country + "<br>" + "Total Cases: " + result[i].cases + " " +   "Total Deaths: " + result[i].deaths + " " )
         };
         })
     });
 });  
 //end external datasearch
+
+//data structure exmaple
+//"country":"China","cases":80880,"todayCases":36,"deaths":3213,"todayDeaths":14,"recovered":67771,"critical":3226

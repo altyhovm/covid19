@@ -3,6 +3,6 @@
  
 Search by country to retireve results.
 
-https://aaronlilly.github.io/covid19/example.html
+https://aaronlilly.github.io/covid19/c19.html
 
 

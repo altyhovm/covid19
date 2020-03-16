@@ -38,7 +38,7 @@ return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
         $('#searchMe').html("");
 for (var i = 0; i < result.length; i++) {
           
-            $('#ArrayD').append(result[i].country + "<br>" + " Today's Cases : " + result[i].todayCases + " Today's Deaths : " + result[i].todayDeaths + "<br>" +  " Total Deaths : " + result[i].deaths + "Total Cases : " + result[i].cases +"<br>" +  "Total Recovered : " + result[i].recovered + " Total Critical : " + result[i].critical)
+            $('#ArrayD').append(result[i].country + "<br>" + " Today's Cases : " + result[i].todayCases + " Today's Deaths : " + result[i].todayDeaths + "<br>" +  " Total Deaths : " + result[i].deaths + " Total Cases : " + result[i].cases +"<br>" +  "Total Recovered : " + result[i].recovered + " Total Critical : " + result[i].critical)
         };
         })
     });

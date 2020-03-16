@@ -38,12 +38,18 @@ return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
         $('#searchMe').html("");
 for (var i = 0; i < result.length; i++) {
           
-            $('#ArrayD').append(result[i].country + "<br>" + "Total Cases: " + result[i].cases + " " +   "Total Deaths: " + result[i].deaths + " " )
+            $('#ArrayD').append(result[i].country + "<br>" + " Today's Cases : " + result[i].todayCases + " Today's Deaths : " + result[i].todayDeaths + "<br>" +  " Total Deaths : " + result[i].deaths + "Total Cases : " + result[i].cases +"<br>" +  "Total Recovered : " + result[i].recovered + " Total Critical : " + result[i].critical)
         };
         })
     });
+
+                          
 });  
 //end external datasearch
 
 //data structure exmaple
 //"country":"China","cases":80880,"todayCases":36,"deaths":3213,"todayDeaths":14,"recovered":67771,"critical":3226
+//result[i].country , result[i].cases, result[i].todayCases,result[i].deaths, result[i].todayDeaths, result[i].recovered,result[i].critical
+// $('#ArrayD').append(result[i].country + " " + result[i].cases + " " + result[i].todayCases + " " + result[i].deaths + " " + result[i].todayDeaths + " " + result[i].recovered + " " + result[i].critical)
+// $('#ArrayD').append(result[i].country + "<br>" + " Total Deaths : " + result[i].deaths + " Today's Cases : " + result[i].todayCases + "<br>" +"Total Cases : " + result[i].cases + " " + " Today's Deaths : " + result[i].todayDeaths + "<br>" +  "Total Recovered : " + result[i].recovered + " Total Critical : " + result[i].critical)
+       

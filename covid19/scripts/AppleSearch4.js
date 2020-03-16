@@ -35,6 +35,7 @@ return object.country.toLowerCase().indexOf(searchString.toLowerCase()) != -1;
 });
         
         $('#ArrayD').html("");
+        $('#searchMe').html("");
 for (var i = 0; i < result.length; i++) {
           
             $('#ArrayD').append(result[i].country + "<br>" + "Total Cases: " + result[i].cases + " " +   "Total Deaths: " + result[i].deaths + " " )

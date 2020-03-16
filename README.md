@@ -1,15 +1,8 @@
 # Coronavirus
- Demo Site for Corona Virus Tracking
+ Corona Virus Tracking Site
+ 
+Search by country to retireve results.
 
-base
-https://aaronlilly.github.io/Coronavirus/covid19/example.html
-
-
-
-external example
-https://aaronlilly.github.io/Coronavirus/externalJsExample/example.html
+https://aaronlilly.github.io/covid19/example.html
 
 
-
-external example
-https://aaronlilly.github.io/Coronavirus/covid19/externalJsExample/example.html
